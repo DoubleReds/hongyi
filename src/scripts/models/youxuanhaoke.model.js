@@ -1,22 +1,20 @@
  const  toptuModel = ()=>{
-     return new Promise((resolve,reject) => {
+    return new Promise((resolve,reject) => {
         $.ajax({
             url: '/api/bigimg',
             type: 'GET',
             data: {
-               
             },
             success: (result) => {
                 resolve(result);
-               
             },
             catch: (err) => {
                 console.log("AJAX请求失败！")
             }
         });
-     })
-     
+    })
 }
+
 const  tuijianModel = ()=>{
     return new Promise((resolve,reject) => {
        $.ajax({

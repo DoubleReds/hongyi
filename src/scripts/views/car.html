@@ -1,0 +1,76 @@
+<div class="content">
+    <div class="leftList">
+        <ul>
+            <li><a href="personal.html"><i></i> 已购买</a></li>
+            <li><a href="buy.html"><i></i> 全部订单</a></li>
+            <li><a href="car.html"><i></i> 购物车</a></li>
+        </ul>
+    </div>
+    <div class="rightList">
+        <!-- <ul> -->
+            <!-- {{each all}}
+            <li>
+                <img class="img" src="http://10.9.166.79:8080/images/{{$value.courseChoose.bigImg}}" alt="111">
+                <span class="price"> 售价：{{$value.courseChoose.price}}元</span>
+                <div id="goumaiBtn">点击购买</div>
+            </li>
+            {{/each}} -->
+            <!-- <li>
+                <img src="" alt="111">
+                <span>售价：199元</span>
+                <div>点击购买</div>
+            </li> -->
+        <!-- </ul> -->
+        <table id="cartTable">
+
+                <thead>
+                        <tr>
+                          <th><label>
+                              <input class="check-all check" type="checkbox"/>&nbsp;&nbsp;全选</label></th>
+                          <th>商品</th>
+                          <th>单价</th>
+                          <th>数量</th>
+                          <th style="width: 50px;">小计</th>
+                          <th>操作</th>
+                        </tr>
+                </thead>
+                <tbody>
+                        {{each all}}
+                        <tr>
+                                <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+                                <td class="goods">
+                                    <img src="http://10.9.166.79:8080/images/{{$value.courseChoose.bigImg}}" alt=""/>
+                                    <span>{{$value.courseChoose.ctitle}}</span>
+                                </td>
+                                <td class="price">{{$value.courseChoose.price}}</td>
+                                <td class="count">
+                                    <span class="reduce">-</span>
+                                    <input class="count-input" type="text" value="1"/>
+                                    <span class="add">+</span></td>
+                                <td class="subtotal" style="width: 100px">{{$value.courseChoose.price}}</td>
+                                <td class="operation"><span class="delete">删除</span></td>
+                        </tr>      
+                        {{/each}}
+                </tbody> 
+        </table>
+        
+        <div class="foot" id="foot">
+                <label class="fl select-all"><input type="checkbox" class="check-all check"/>&nbsp;&nbsp;全选</label>
+                <a class="fl delete" id="deleteAll" href="javascript:;">删除</a>
+                <div class="fr closing" id="sum" onclick="getTotal();">结 算</div>
+                <input type="hidden" id="cartTotalPrice" />
+                <div class="fr total">合计：￥<span id="priceTotal">0.00</span></div>
+                <div class="fr selected" id="selected">已选商品
+                    <span id="selectedTotal">0</span>件
+                    <span class="arrow up">︽</span>
+                    <span class="arrow down">︾</span>
+                </div>
+                <div class="selected-view">
+                  <div id="selectedViewList" class="clearfix">
+                    <div><img src=""><span>取消选择</span></div>
+                  </div>
+                  <span class="arrow">◆<span>◆</span></span> </div>
+        </div>
+            
+    </div>
+</div>

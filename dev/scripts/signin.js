@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 29);
+/******/ 	return __webpack_require__(__webpack_require__.s = 40);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -68,14 +68,14 @@
 /***/ 0:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\"></div>"
+module.exports = "  <!-- 头部 -->  <div class=\"header_whole\">    <header>            <div class=\"logo\">                <a href=\"shouye.html\">                    <img src=\"./images/logo.png\" alt=\"logo\">                </a>            </div>            <div class=\"head-center\">                <div class=\"search\">                    <input type=\"text\">                    <i class=\"iconfont\" id=\"searchBtn\">&#xe641;</i>                </div>                <div class=\"nav\">                    <ul>                        <li><a href=\"shouye.html\">首页</a></li>                        <li><a href=\"zonghepaixu.html\">课程选择</a></li>                        <li><a href=\"youxuanhaoke.html\">优选好课</a></li>                    </ul>                </div>             </div>            <div class=\"login-register\">                <a href=\"signin.html\"><span>登录</span></a>|                <a href=\"signup.html\"><span>注册</span></a>                <a href=\"personal.html\"><span>个人中心</span></a>             </div>    </header></div>"
 
 /***/ }),
 
 /***/ 1:
 /***/ (function(module, exports) {
 
-module.exports = "  <!-- 头部 -->  <div class=\"header_whole\">    <header>            <div class=\"logo\">                <a href=\"shouye.html\">                    <img src=\"./images/logo.png\" alt=\"logo\">                </a>            </div>            <div class=\"head-center\">                <div class=\"search\">                    <input type=\"text\">                    <i class=\"iconfont\">&#xe641;</i>                </div>                <div class=\"nav\">                    <ul>                        <li><a href=\"shouye.html\">首页</a></li>                        <li><a href=\"zonghepaixu.html\">课程选择</a></li>                        <li><a href=\"youxuanhaoke.html\">优选好课</a></li>                    </ul>                </div>             </div>            <div class=\"login-register\">                <a href=\"login.html\"><span>登录</span></a>|                <a href=\"register\"><span>注册</span></a>                <a href=\"personal.html\"><span>个人中心</span></a>             </div>    </header></div>"
+module.exports = "<div class=\"container\"></div>"
 
 /***/ }),
 
@@ -86,16 +86,16 @@ module.exports = "<div class=\"footer\">    <div>            &copy;;2018 Search 
 
 /***/ }),
 
-/***/ 29:
+/***/ 40:
 /***/ (function(module, exports, __webpack_require__) {
 
-const indexTpl = __webpack_require__(0)
-const headerTpl = __webpack_require__(1)
+const indexTpl = __webpack_require__(1)
+const headerTpl = __webpack_require__(0)
 const footerTpl = __webpack_require__(2)
-const signinTpl = __webpack_require__(30)
+const signinTpl = __webpack_require__(41)
 
 
-const signinController = __webpack_require__(31)
+const signinController = __webpack_require__(42)
   
 
 $('#root').html(indexTpl)
@@ -108,17 +108,17 @@ signinController.signinCol()
 
 /***/ }),
 
-/***/ 30:
+/***/ 41:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"content\">    <div class=\"login-center\">    <div class=\"welc\">    <div class=\"line\"></div>    <div class=\"login-title\">欢迎登陆弘毅智学网！</div>    <div class=\"line\"></div>    </div>    <div class=\"login-email\">    <input type=\"text\" name=\"email\" id=\"username\" placeholder=\"用户名\">    </div>    <div class=\"login-pwd\">    <input type=\"password\" name=\"pwd\" id=\"pwd\" placeholder=\"密码\">    </div>    <div class=\"forget\">    <div class=\"next\">    <input type=\"checkbox\" class=\"check\" >     </a><span>下次自动登陆</span>    </div>    <div class=\"forPwd\"><a href=\"findpwd.html\">忘记密码?</a></div>    </div>    <div class=\"loginBtn\">    <button id=\"login-btn\">登录</button>    <div class=\"noNumber\">    <p>还没账号？<a href=\"signup.html\"><span>立即注册</span></a></p >    </div>    </div>    </div>"
 
 /***/ }),
 
-/***/ 31:
+/***/ 42:
 /***/ (function(module, exports, __webpack_require__) {
 
-const signinModel = __webpack_require__(32)
+const signinModel = __webpack_require__(43)
 
 const signinCol = () => {
         
@@ -151,7 +151,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 32:
+/***/ 43:
 /***/ (function(module, exports) {
 
 const signinModel = (data) => {

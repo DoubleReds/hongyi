@@ -27,10 +27,10 @@ const toptuCol = async () => {
     //     console.log(id)
     //     // location.href="kechengxiangqing.html"
     // })
-$('img').click(function(e) { 
-    var id=$(e.target).attr("id");
-    location.href = "kechengxiangqing.html?id=" + id;
-})
+    $('img').click(function(e) { 
+        var id=$(e.target).attr("id");
+        location.href = "kechengxiangqing.html?id=" + id;
+    })
 
 }
 

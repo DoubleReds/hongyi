@@ -1,0 +1,267 @@
+#root {
+  height: 100%; }
+  #root li {
+    list-style: none; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../iconfonts/iconfont.eot");
+  src: url("../iconfonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../iconfonts/iconfont.woff") format("woff"), url("../iconfonts/iconfont.ttf") format("truetype"); }
+
+.container {
+  width: 100%; }
+  .container .header_whole {
+    background-color: #fff;
+    width: 100%; }
+    .container .header_whole header {
+      background-color: #fff;
+      width: 1200px;
+      margin: 0 auto;
+      height: 170px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .container .header_whole header .logo {
+        flex: .1; }
+      .container .header_whole header .head-center {
+        flex: .4;
+        display: flex;
+        margin-top: 50px;
+        height: 120px;
+        flex-direction: column; }
+        .container .header_whole header .head-center .search {
+          font-family: 'iconfont' !important;
+          width: 100%;
+          height: 45px;
+          text-align: center;
+          border: 1px solid #333;
+          border-radius: 30px; }
+          .container .header_whole header .head-center .search input {
+            width: 75%;
+            height: 95%;
+            border: none;
+            border-right: 1px solid #333; }
+          .container .header_whole header .head-center .search .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 26px;
+            font-style: normal; }
+        .container .header_whole header .head-center ul {
+          text-align: center; }
+          .container .header_whole header .head-center ul li {
+            width: 100px;
+            padding: 10px;
+            float: left;
+            text-align: center; }
+            .container .header_whole header .head-center ul li a {
+              width: 100%;
+              height: 100%;
+              padding: 10px 10px;
+              text-decoration: none;
+              color: #333; }
+            .container .header_whole header .head-center ul li a:hover {
+              color: red;
+              border-bottom: 2px solid #d93732; }
+      .container .header_whole header .login-register {
+        flex: .3;
+        display: flex; }
+        .container .header_whole header .login-register a {
+          flex: 33.33%;
+          color: #333;
+          font-size: 16px;
+          text-decoration: none; }
+          .container .header_whole header .login-register a span:nth-child(1) {
+            width: 20%; }
+          .container .header_whole header .login-register a span:nth-child(2) {
+            width: 20%; }
+          .container .header_whole header .login-register a span:nth-child(3) {
+            width: 60%;
+            padding-left: 50px; }
+
+.container a {
+  text-decoration: none; }
+
+.container .content {
+  width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between; }
+  .container .content .leftList {
+    flex: .2; }
+    .container .content .leftList ul li {
+      width: 246px;
+      height: 76px;
+      line-height: 76px;
+      margin-bottom: 40px;
+      background: #888;
+      border-radius: 20px;
+      text-align: center; }
+      .container .content .leftList ul li a {
+        color: #fff;
+        font-size: 22px; }
+    .container .content .leftList ul li:nth-child(3) {
+      background: #2999eb; }
+  .container .content .rightList {
+    flex: .75;
+    height: 100%;
+    background: #fff; }
+    .container .content .rightList table {
+      width: 100%;
+      height: 100%; }
+      .container .content .rightList table thead {
+        height: 80px;
+        line-height: 80px;
+        text-align: center; }
+        .container .content .rightList table thead tr {
+          height: 100%;
+          border-top: 1px solid #dedede; }
+          .container .content .rightList table thead tr th {
+            width: 40px;
+            text-align: center; }
+      .container .content .rightList table tbody tr {
+        width: 100%;
+        height: 80px; }
+        .container .content .rightList table tbody tr td {
+          height: 80px;
+          line-height: 80px; }
+          .container .content .rightList table tbody tr td img {
+            width: 155px;
+            height: 103px; }
+        .container .content .rightList table tbody tr .goods span {
+          margin-top: 20px;
+          text-align: left;
+          float: right;
+          margin-right: 50px; }
+        .container .content .rightList table tbody tr .price {
+          text-align: center; }
+        .container .content .rightList table tbody tr .count {
+          text-align: center; }
+        .container .content .rightList table tbody tr .count .add, .container .content .rightList table tbody tr .count input, .container .content .rightList table tbody tr .count .reduce {
+          margin-right: -1px;
+          position: relative;
+          z-index: 1; }
+        .container .content .rightList table tbody tr .count input {
+          width: 50px;
+          height: 15px;
+          line-height: 15px;
+          border: 1px solid #aaa;
+          color: #343434;
+          text-align: center;
+          padding: 4px 0;
+          background-color: #fff;
+          z-index: 2; }
+        .container .content .rightList table tbody tr .subtotal {
+          text-align: center; }
+        .container .content .rightList table tbody tr .operation {
+          text-align: center; }
+        .container .content .rightList table tbody tr .operation span:hover, .container .content .rightList table tbody tr a:hover {
+          cursor: pointer;
+          color: red;
+          text-decoration: underline; }
+    .container .content .rightList .foot {
+      margin-top: 0px;
+      color: #666;
+      height: 48px;
+      border: 1px solid #c8c8c8;
+      border-top: 0;
+      background-color: #eaeaea;
+      background-image: linear-gradient(RGB(241, 241, 241), RGB(226, 226, 226));
+      position: relative;
+      z-index: 8; }
+    .container .content .rightList .foot div, .container .content .rightList .foot a {
+      line-height: 48px;
+      height: 48px; }
+    .container .content .rightList .foot .select-all {
+      width: 80px;
+      height: 48px;
+      line-height: 48px;
+      color: #666;
+      text-align: center; }
+    .container .content .rightList .foot .delete {
+      padding-left: 10px;
+      color: #333; }
+    .container .content .rightList .foot .closing {
+      float: right;
+      border-left: 1px solid #c8c8c8;
+      width: 103px;
+      text-align: center;
+      color: #666;
+      font-weight: bold;
+      cursor: pointer;
+      background-image: linear-gradient(RGB(241, 241, 241), RGB(226, 226, 226)); }
+    .container .content .rightList .foot .closing:hover {
+      background-image: linear-gradient(RGB(226, 226, 226), RGB(241, 241, 241));
+      color: #333; }
+    .container .content .rightList .foot .total {
+      margin: 0 20px;
+      cursor: pointer;
+      float: right; }
+    .container .content .rightList .foot #priceTotal, .container .content .rightList .foot #selectedTotal {
+      color: red;
+      font-family: "Microsoft Yahei";
+      font-weight: bold; }
+    .container .content .rightList .foot .selected {
+      cursor: pointer;
+      float: right; }
+    .container .content .rightList .foot .selected .arrow {
+      position: relative;
+      top: -3px;
+      margin-left: 3px; }
+    .container .content .rightList .foot .selected .down {
+      position: relative;
+      top: 3px;
+      display: none; }
+    .container .content .rightList .show .selected .down {
+      display: inline; }
+    .container .content .rightList .show .selected .up {
+      display: none; }
+    .container .content .rightList .foot .selected:hover .arrow {
+      color: red; }
+    .container .content .rightList .foot .selected-view {
+      width: 938px;
+      border: 1px solid #c8c8c8;
+      position: absolute;
+      height: auto;
+      background: #ffffff;
+      z-index: 9;
+      bottom: 48px;
+      left: -1px;
+      display: none; }
+    .container .content .rightList .show .selected-view {
+      display: block; }
+    .container .content .rightList .foot .selected-view div {
+      height: auto;
+      float: left; }
+    .container .content .rightList .foot .selected-view div img {
+      width: 155px;
+      height: 103px; }
+    .container .content .rightList .foot .selected-view .arrow {
+      font-size: 16px;
+      line-height: 100%;
+      color: #c8c8c8;
+      position: absolute;
+      right: 330px;
+      bottom: -9px; }
+    .container .content .rightList .foot .selected-view .arrow span {
+      color: #ffffff;
+      position: absolute;
+      left: 0px;
+      bottom: 1px; }
+    .container .content .rightList .foot .delete a:hover {
+      text-decoration: underline;
+      color: red; }
+    .container .content .rightList .foot .selected-view .clearfix div:nth-child(2) img {
+      width: 155px;
+      height: 103px; }
+
+.container .footer {
+  background: #282828;
+  margin-top: 60px; }
+  .container .footer div {
+    width: 1200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 12px; }

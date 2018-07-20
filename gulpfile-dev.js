@@ -57,7 +57,10 @@ gulp.task('scss',()=>{
                 'signin': './src/scripts/signin.js',
                 'signup': './src/scripts/signup.js',
                 'shouye': './src/scripts/shouye.js',
-                'findpwd': './src/scripts/findpwd.js'
+                'findpwd': './src/scripts/findpwd.js',
+                'personal':'./src/scripts/personal.js',
+                'car':'./src/scripts/car.js',
+                'buy':'./src/scripts/buy.js'
             },
 
                 //入口 

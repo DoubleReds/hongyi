@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 39);
+/******/ 	return __webpack_require__(__webpack_require__.s = 54);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -68,14 +68,14 @@
 /***/ 0:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\"></div>"
+module.exports = "  <!-- 头部 -->  <div class=\"header_whole\">    <header>            <div class=\"logo\">                <a href=\"shouye.html\">                    <img src=\"./images/logo.png\" alt=\"logo\">                </a>            </div>            <div class=\"head-center\">                <div class=\"search\">                    <input type=\"text\">                    <i class=\"iconfont\" id=\"searchBtn\">&#xe641;</i>                </div>                <div class=\"nav\">                    <ul>                        <li><a href=\"shouye.html\">首页</a></li>                        <li><a href=\"zonghepaixu.html\">课程选择</a></li>                        <li><a href=\"youxuanhaoke.html\">优选好课</a></li>                    </ul>                </div>             </div>            <div class=\"login-register\">                <a href=\"signin.html\"><span>登录</span></a>|                <a href=\"signup.html\"><span>注册</span></a>                <a href=\"personal.html\"><span>个人中心</span></a>             </div>    </header></div>"
 
 /***/ }),
 
 /***/ 1:
 /***/ (function(module, exports) {
 
-module.exports = "  <!-- 头部 -->  <div class=\"header_whole\">    <header>            <div class=\"logo\">                <a href=\"shouye.html\">                    <img src=\"./images/logo.png\" alt=\"logo\">                </a>            </div>            <div class=\"head-center\">                <div class=\"search\">                    <input type=\"text\">                    <i class=\"iconfont\">&#xe641;</i>                </div>                <div class=\"nav\">                    <ul>                        <li><a href=\"shouye.html\">首页</a></li>                        <li><a href=\"zonghepaixu.html\">课程选择</a></li>                        <li><a href=\"youxuanhaoke.html\">优选好课</a></li>                    </ul>                </div>             </div>            <div class=\"login-register\">                <a href=\"login.html\"><span>登录</span></a>|                <a href=\"register\"><span>注册</span></a>                <a href=\"personal.html\"><span>个人中心</span></a>             </div>    </header></div>"
+module.exports = "<div class=\"container\"></div>"
 
 /***/ }),
 
@@ -86,15 +86,15 @@ module.exports = "<div class=\"footer\">    <div>            &copy;;2018 Search 
 
 /***/ }),
 
-/***/ 39:
+/***/ 54:
 /***/ (function(module, exports, __webpack_require__) {
 
-const indexTpl = __webpack_require__(0)
-const headerTpl = __webpack_require__(1)
+const indexTpl = __webpack_require__(1)
+const headerTpl = __webpack_require__(0)
 const footerTpl = __webpack_require__(2)
 
-const findpwd_mainTpl = __webpack_require__(40)
-const findpwdController = __webpack_require__(41)
+const findpwd_mainTpl = __webpack_require__(55)
+const findpwdController = __webpack_require__(56)
 
 
 $('#root').html(indexTpl)
@@ -106,17 +106,17 @@ findpwdController.findpwdCol()
 
 /***/ }),
 
-/***/ 40:
+/***/ 55:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"content\">    <div class=\"login-center\">        <div class=\"welc\">            <div class=\"line\"></div>            <div class=\"login-title\">找回密码</div>            <div class=\"line\"></div>        </div>        <div class=\"login-user\">        <input type=\"text\" name=\"username\" id=\"username\" placeholder=\"请输入用户名\">    </div>    <div class=\"identifyCode\">        <input type=\"text\" name=\"email\" id=\"email\" placeholder=\"请输入邮箱\">    </div>    <div class=\"identifyCode\">        <input type=\"text\" name=\"repwd\" id=\"repwd\" placeholder=\"请输入重置密码\">    </div>    <div class=\"loginBtn\">        <button id=\"login-btn\">下一步</button>        <div class=\"noNumber\">            <p>邮箱号丢了？再<a href=\"signup.html\"><span>注册</span></a>一个吧！ </p >        </div>    </div></div>"
 
 /***/ }),
 
-/***/ 41:
+/***/ 56:
 /***/ (function(module, exports, __webpack_require__) {
 
-const findpwdModel = __webpack_require__(42)
+const findpwdModel = __webpack_require__(57)
 
 const findpwdCol = () => {
         
@@ -159,7 +159,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 42:
+/***/ 57:
 /***/ (function(module, exports) {
 
 const findpwdModel = (data) => {

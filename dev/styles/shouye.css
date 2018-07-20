@@ -90,194 +90,245 @@
     color: #fff;
     font-size: 12px; }
 
-.container {
-  flex: 1; }
-  .container .banner {
-    width: 100%;
-    height: 390px; }
-    .container .banner .swiper {
-      width: 100%;
-      height: 100%; }
-      .container .banner .swiper img {
+.container .zong_main {
+  overflow: hidden;
+  font-size: 14px; }
+  .container .zong_main ul li {
+    width: 1200px;
+    overflow: hidden;
+    border-bottom: 1px solid #a3a3a3; }
+    .container .zong_main ul li .zong_main_left {
+      float: left;
+      width: 240px;
+      height: 150px;
+      background: red;
+      margin: 20px 30px 20px 30px; }
+      .container .zong_main ul li .zong_main_left img {
         width: 100%;
         height: 100%; }
-  .container .course {
-    width: 100%; }
-    .container .course .courseBody {
-      width: 1200px;
-      margin: 0 auto; }
-      .container .course .courseBody .courseTitle {
-        height: 160px;
-        background: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column; }
-        .container .course .courseBody .courseTitle .tit-top {
-          flex: .5;
-          display: flex;
-          align-items: center;
-          font-size: 12px; }
-          .container .course .courseBody .courseTitle .tit-top .line {
-            height: 1px;
-            width: 150px;
-            background: #666;
-            margin: 0 20px; }
-        .container .course .courseBody .courseTitle p {
-          font-size: 18px; }
-      .container .course .courseBody ul {
-        width: 1200px;
-        height: 340px;
-        margin: 0 auto;
-        display: flex; }
-        .container .course .courseBody ul li {
-          width: 25%;
-          height: 80%;
-          margin-left: 44px;
-          background: #f99; }
-  .container .characteristic {
+    .container .zong_main ul li .zong_main_right {
+      margin: 20px 40px 20px 0; }
+      .container .zong_main ul li .zong_main_right .top {
+        overflow: hidden;
+        width: 860px; }
+        .container .zong_main ul li .zong_main_right .top span {
+          margin-top: 10px;
+          margin-bottom: 30px; }
+          .container .zong_main ul li .zong_main_right .top span:nth-of-type(1) {
+            float: left; }
+          .container .zong_main ul li .zong_main_right .top span:nth-of-type(2) {
+            float: right; }
+            .container .zong_main ul li .zong_main_right .top span:nth-of-type(2) i {
+              font-style: normal;
+              color: #da2a50; }
+
+.container .swiper-container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 300px;
+  overflow: hidden; }
+  .container .swiper-container .swiper-wrapper {
     width: 100%;
-    background: #ebebeb; }
-    .container .characteristic .character {
-      width: 1200px;
-      margin: 0 auto; }
-      .container .characteristic .character .courseTitle {
-        height: 160px;
-        background: #fff;
+    height: 100%; }
+    .container .swiper-container .swiper-wrapper img {
+      width: 100%;
+      height: 100%; }
+
+.container .course {
+  width: 100%; }
+  .container .course .courseBody {
+    width: 1200px;
+    margin: 0 auto; }
+    .container .course .courseBody .courseTitle {
+      height: 160px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      .container .course .courseBody .courseTitle .tit-top {
+        flex: .5;
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background: #ebebeb; }
-        .container .characteristic .character .courseTitle .tit-top {
-          flex: .5;
-          display: flex;
-          align-items: center;
-          font-size: 12px; }
-          .container .characteristic .character .courseTitle .tit-top .line {
-            height: 1px;
-            width: 150px;
-            background: #666;
-            margin: 0 20px; }
-        .container .characteristic .character .courseTitle p {
-          font-size: 18px; }
-      .container .characteristic .character ul {
-        width: 1160px;
-        height: 380px;
-        margin-left: 30px;
-        display: flex;
-        justify-content: space-between; }
-        .container .characteristic .character ul li {
-          text-align: center; }
-          .container .characteristic .character ul li a {
-            width: 100%;
-            height: 100%;
-            color: #333; }
-            .container .characteristic .character ul li a img {
-              display: block;
-              padding: 0 10px; }
-            .container .characteristic .character ul li a div p:nth-child(1) {
-              font-size: 24px;
-              color: #333; }
-            .container .characteristic .character ul li a div p:nth-child(2) {
-              font-size: 18px;
-              color: #666; }
-            .container .characteristic .character ul li a div p:nth-child(3) {
-              font-size: 18px;
-              color: #666; }
-  .container .exhibition {
-    width: 100%; }
-    .container .exhibition .exhibite {
+        font-size: 12px; }
+        .container .course .courseBody .courseTitle .tit-top .line {
+          height: 1px;
+          width: 150px;
+          background: #666;
+          margin: 0 20px; }
+      .container .course .courseBody .courseTitle p {
+        font-size: 18px; }
+    .container .course .courseBody ul {
       width: 1200px;
-      margin: 0 auto; }
-      .container .exhibition .exhibite .courseTitle {
-        height: 160px;
-        background: #fff;
+      height: 340px;
+      margin: 0 auto;
+      display: flex; }
+      .container .course .courseBody ul li {
+        width: 25%;
+        height: 80%;
+        margin-left: 44px;
+        background: #f99; }
+      .container .course .courseBody ul a {
+        width: 100%;
+        height: 100%; }
+        .container .course .courseBody ul a img {
+          width: 100%;
+          height: 100%; }
+
+.container .characteristic {
+  width: 100%;
+  background: #ebebeb; }
+  .container .characteristic .character {
+    width: 1200px;
+    margin: 0 auto; }
+    .container .characteristic .character .courseTitle {
+      height: 160px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: #ebebeb; }
+      .container .characteristic .character .courseTitle .tit-top {
+        flex: .5;
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height: 150px; }
-        .container .exhibition .exhibite .courseTitle .tit-top {
-          flex: .5;
-          display: flex;
-          align-items: center;
-          font-size: 12px; }
-          .container .exhibition .exhibite .courseTitle .tit-top .line {
-            height: 1px;
-            width: 150px;
-            background: #666;
-            margin: 0 20px; }
-        .container .exhibition .exhibite .courseTitle p {
-          font-size: 18px; }
-      .container .exhibition .exhibite ul {
-        height: 360px;
-        margin-left: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between; }
-        .container .exhibition .exhibite ul li {
-          text-align: center;
-          position: relative; }
-          .container .exhibition .exhibite ul li a {
-            width: 100%;
-            height: 100%;
+        font-size: 12px; }
+        .container .characteristic .character .courseTitle .tit-top .line {
+          height: 1px;
+          width: 150px;
+          background: #666;
+          margin: 0 20px; }
+      .container .characteristic .character .courseTitle p {
+        font-size: 18px; }
+    .container .characteristic .character ul {
+      width: 1160px;
+      margin-left: 30px;
+      display: flex;
+      justify-content: space-between; }
+      .container .characteristic .character ul li {
+        text-align: center; }
+        .container .characteristic .character ul li a {
+          width: 100%;
+          height: 100%;
+          color: #333;
+          text-decoration: none; }
+          .container .characteristic .character ul li a img {
+            display: block;
+            padding: 0 10px; }
+          .container .characteristic .character ul li a div p:nth-child(1) {
+            font-size: 24px;
             color: #333; }
-            .container .exhibition .exhibite ul li a img {
-              display: block;
-              padding: 0 10px; }
-            .container .exhibition .exhibite ul li a div {
-              width: 270px;
-              height: 25px;
-              bottom: 20px;
-              left: 10px;
-              font-size: 16px;
-              font-weight: 500;
-              background: #eee;
-              opacity: .5;
-              position: absolute; }
-  .container .quotation {
-    width: 100%;
-    background: #ebebeb; }
-    .container .quotation .quota {
-      width: 1200px;
-      margin: 0 auto; }
-      .container .quotation .quota .courseTitle {
-        height: 160px;
-        background: #fff;
+          .container .characteristic .character ul li a div p:nth-child(2) {
+            font-size: 18px;
+            color: #666; }
+          .container .characteristic .character ul li a div p:nth-child(3) {
+            font-size: 18px;
+            color: #666; }
+
+.container .exhibition {
+  width: 100%; }
+  .container .exhibition .exhibite {
+    width: 1200px;
+    margin: 0 auto; }
+    .container .exhibition .exhibite .courseTitle {
+      height: 160px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 150px; }
+      .container .exhibition .exhibite .courseTitle .tit-top {
+        flex: .5;
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background: #ebebeb;
-        height: 130px; }
-        .container .quotation .quota .courseTitle .tit-top {
-          flex: .5;
-          display: flex;
-          align-items: center;
-          font-size: 12px; }
-          .container .quotation .quota .courseTitle .tit-top .line {
-            height: 1px;
-            width: 150px;
-            background: #666;
-            margin: 0 20px; }
-        .container .quotation .quota .courseTitle p {
-          font-size: 18px; }
-      .container .quotation .quota ul {
-        height: 230px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between; }
-        .container .quotation .quota ul li {
-          width: 270px;
-          height: 160px;
-          text-align: center;
-          position: relative;
-          background: #f99; }
-          .container .quotation .quota ul li a {
+        font-size: 12px; }
+        .container .exhibition .exhibite .courseTitle .tit-top .line {
+          height: 1px;
+          width: 150px;
+          background: #666;
+          margin: 0 20px; }
+      .container .exhibition .exhibite .courseTitle p {
+        font-size: 18px; }
+    .container .exhibition .exhibite ul {
+      height: 360px;
+      margin-left: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .container .exhibition .exhibite ul li {
+        width: 25%;
+        height: 100%;
+        text-align: center;
+        position: relative;
+        width: 270px;
+        height: 160px; }
+        .container .exhibition .exhibite ul li a {
+          width: 100%;
+          height: 100%;
+          color: #333; }
+          .container .exhibition .exhibite ul li a img {
+            display: block;
+            padding: 0 10px;
             width: 100%;
-            height: 100%;
-            color: #333; }
-        .container .quotation .quota ul li:nth-child(1) {
-          margin-left: 30px; }
+            height: 100%; }
+          .container .exhibition .exhibite ul li a div {
+            width: 270px;
+            height: 25px;
+            bottom: 20px;
+            left: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            background: #eee;
+            opacity: .5;
+            position: absolute; }
+
+.container .quotation {
+  width: 100%;
+  background: #ebebeb; }
+  .container .quotation .quota {
+    width: 1200px;
+    margin: 0 auto; }
+    .container .quotation .quota .courseTitle {
+      height: 160px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: #ebebeb;
+      height: 130px; }
+      .container .quotation .quota .courseTitle .tit-top {
+        flex: .5;
+        display: flex;
+        align-items: center;
+        font-size: 12px; }
+        .container .quotation .quota .courseTitle .tit-top .line {
+          height: 1px;
+          width: 150px;
+          background: #666;
+          margin: 0 20px; }
+      .container .quotation .quota .courseTitle p {
+        font-size: 18px; }
+    .container .quotation .quota ul {
+      height: 230px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .container .quotation .quota ul li {
+        width: 270px;
+        height: 160px;
+        text-align: center;
+        position: relative;
+        background: #f99; }
+        .container .quotation .quota ul li a {
+          width: 100%;
+          height: 100%;
+          color: #333; }
+          .container .quotation .quota ul li a img {
+            width: 100%;
+            height: 100%; }
+      .container .quotation .quota ul li:nth-child(1) {
+        margin-left: 30px; }

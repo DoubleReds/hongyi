@@ -1,0 +1,20 @@
+<div class="content">
+    <div class="leftList">
+        <ul>
+            <li><a href="personal.html"><i></i> 已购买</a></li>
+            <li><a href="buy.html"><i></i> 全部订单</a></li>
+            <li><a href="car.html"><i></i> 购物车</a></li>
+        </ul>
+    </div>
+    <div class="rightList">
+        <ul>
+                {{each buy}}
+                <li>
+                    <img style="width:157px; height: 105px;" src="http://10.9.166.79:8080/images/{{$value.courseChoose.bigImg}}" alt="111">
+                    <span style="width:93px; ">售价：{{$value.courseChoose.price}}元</span>
+                    <span style="width:238px;">购买时间：{{buy[$index].buytime}}</span>
+                </li>
+                {{/each}}     
+        </ul>
+    </div>
+</div>
