@@ -22,7 +22,7 @@ const zhifuCol = async () => {
     $('.btn').click(function(e) { 
         var id = $(e.target).attr("id");
         console.log(id)
-        // location.href = "zhifusucc.html?id=" + id;
+        location.href = "zhifusucc.html?id=" + id;
     })
 
 }

@@ -11,12 +11,12 @@ const signupCol = () => {
                     email: $("#email").val()
                 }
                 let result = await signupModel.signupModel(JSON.stringify({ username, password, phone, email }))
-                if (result.code == 0) {
-                                    location.href="/signin.html"
-                        }
-                        if (result.code == -1) {
-                            alert("用户名已存在")
-                        }
+                // if (result.code == 0) {
+                //                     location.href="/signin.html"
+                //         }
+                //         if (result.code == -1) {
+                //             alert("用户名已存在")
+                //         }
                         
                     $('#username').val(''),
                     $('#pwd').val(''),

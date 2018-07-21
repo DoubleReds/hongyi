@@ -36,10 +36,10 @@ const  allModel = () =>{
     })
  }
 // 购物车(未购买)
- const  mycenterNo = () =>{
+ const  mycenterNo = (id) =>{
     return new Promise((resolve,reject) => {
        $.ajax({
-           url: '/api/mycenterno/1',
+           url: 'api/mycenterno/'+id,
            type: 'GET',
         //    contentType: 'application/json; charset=utf-8',
            data: {

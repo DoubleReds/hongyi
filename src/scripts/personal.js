@@ -11,4 +11,4 @@ $('#root').html(indexTpl)
 $('.container').html(headerTpl +  personal_Main)
 $('.container').append( footerTpl)
 
-personalController.mycenterYes()
+// personalController.mycenterYes()

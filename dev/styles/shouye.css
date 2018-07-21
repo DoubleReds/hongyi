@@ -124,7 +124,7 @@
 
 .container .swiper-container {
   width: 1200px;
-  margin: 0 auto;
+  margin-left: 200px;
   height: 300px;
   overflow: hidden; }
   .container .swiper-container .swiper-wrapper {

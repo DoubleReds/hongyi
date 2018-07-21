@@ -108,7 +108,7 @@ signupController.signupCol()
 /***/ 45:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"content\">    <div class=\"login-center\">        <div class=\"welc\">            <div class=\"line\"></div>            <div class=\"login-title\">欢迎注册弘毅智学网！</div>            <div class=\"line\"></div>        </div>        <div class=\"login-user\">            <input type=\"text\" name=\"username\" id=\"username\" placeholder=\"请输入用户名\">        </div>        <div class=\"login-pwd\">                <input type=\"text\" name=\"pwd\" id=\"pwd\" placeholder=\"密码\">        </div>        <div class=\"login-phone\">            <input type=\"text\" name=\"phoneNumber\" id=\"phoneNumber\" placeholder=\"请输入手机号\">        </div>        <div class=\"login-email\">            <input type=\"text\" name=\"email\" id=\"email\" placeholder=\"请输入邮箱\">        </div>                      <div class=\"registerBtn\">            <button id=\"register-btn\">注册</button>        <div class=\"noNumber\">            <p>已有账号？<a href=\"signin.html\"><span>立即登录</span></a> </p>        </div>    </div></div>"
+module.exports = "<div class=\"content\">    <div class=\"login-center\">        <div class=\"welc\">            <div class=\"line\"></div>            <div class=\"login-title\">欢迎注册弘毅智学网！</div>            <div class=\"line\"></div>        </div>        <div class=\"login-user\">            <input type=\"text\" name=\"username\" id=\"username\" placeholder=\"请输入用户名\">        </div>        <div class=\"login-pwd\">                <input type=\"password\" name=\"pwd\" id=\"pwd\" placeholder=\"密码\">        </div>        <div class=\"login-phone\">            <input type=\"text\" name=\"phoneNumber\" id=\"phoneNumber\" placeholder=\"请输入手机号\">        </div>        <div class=\"login-email\">            <input type=\"text\" name=\"email\" id=\"email\" placeholder=\"请输入邮箱\">        </div>                      <div class=\"registerBtn\">            <button id=\"register-btn\">注册</button>        <div class=\"noNumber\">            <p>已有账号？<a href=\"signin.html\"><span>立即登录</span></a> </p>        </div>    </div></div>"
 
 /***/ }),
 
@@ -128,12 +128,12 @@ const signupCol = () => {
                     email: $("#email").val()
                 }
                 let result = await signupModel.signupModel(JSON.stringify({ username, password, phone, email }))
-                if (result.code == 0) {
-                                    location.href="/signin.html"
-                        }
-                        if (result.code == -1) {
-                            alert("用户名已存在")
-                        }
+                // if (result.code == 0) {
+                //                     location.href="/signin.html"
+                //         }
+                //         if (result.code == -1) {
+                //             alert("用户名已存在")
+                //         }
                         
                     $('#username').val(''),
                     $('#pwd').val(''),

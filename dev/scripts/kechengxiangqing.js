@@ -144,9 +144,13 @@ const keChengCol = async () => {
         // location.href = "kechengxiangqing.html?id=" + id;
     })
 
-    $('.carr input').click(function(e) { 
+    $('#buy').click(function(e) { 
         var id = $(e.target).attr("class");
         location.href = "goumai.html?id=" + id;
+    })
+    $('#add').click(function(e) { 
+        var id = $(e.target).attr("class");
+        location.href = "car.html?id=" + id;
     })
 
 }
@@ -189,7 +193,7 @@ module.exports = {
 /***/ 33:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main1\">    <div class=\"main1_left\">        <img src=\"http://10.9.166.79:8080/images/{{aa.bigImg}}\" alt=\"\">    </div>    <div class=\"main1_right\">        <h2>{{aa.ctitle}}</h2>        <div class=\"desc\">            <div class=\"desc1\">{{aa.description}}</div>            <div class=\"price\">{{aa.price}}</div>        </div>        <div class=\"dafen\">            <span>视频时长:</span>            <span>{{aa.hours}}</span>            <span>购买次数:</span>            <span>{{aa.pay}}</span>        </div>        <div class=\"carr\">            <input type=\"submit\" class=\"{{aa.id}}\" value=\"点击购买\">            <input type=\"submit\" class=\"{{aa.id}}\" value=\"加入购物车\">        </div>    </div>     </div><div class=\"main2\">    <div class=\"main2_left\">        <h2>基本介绍</h2>        <div class=\'main2_lefttu\'><img src=\"http://10.9.166.79:8080/images/{{aa.descImg.coursejianjie}}\" alt=\"\"></div>        <div class=\'main2_lefttu\'><img src=\"http://10.9.166.79:8080/images/{{aa.descImg.jiaoxuemubiao}}\" alt=\"\"></div>        <div class=\'main2_lefttu\'><img src=\"http://10.9.166.79:8080/images/{{aa.descImg.jiaoxuefangfa}}\" alt=\"\"></div>    </div>    <div class=\"main2_right\">        <h2>章节目录</h2>        {{each aa.courseCatalogs}}        <div class=\"title1\">            <h3>{{$value.catalog}}</h3>            <div class=\"title1_t\">                <ul>                            {{each $value.instructionContents}}                        <li>{{$value.name}}</li>                        {{/each}}                </ul>            </div>        </div>        {{/each}}    </div> </div>"
+module.exports = "<div class=\"main1\">    <div class=\"main1_left\">        <img src=\"http://10.9.166.79:8080/images/{{aa.url}}\" alt=\"\">    </div>    <div class=\"main1_right\">        <h2>{{aa.ctitle}}</h2>        <div class=\"desc\">            <div class=\"desc1\">{{aa.description}}</div>            <div class=\"price\">{{aa.price}}</div>        </div>        <div class=\"dafen\">            <span>视频时长:</span>            <span>{{aa.hours}}</span>            <span>购买次数:</span>            <span>{{aa.pay}}</span>        </div>        <div class=\"carr\">            <input type=\"submit\" id=\"buy\" class=\"{{aa.id}}\" value=\"点击购买\">            <input type=\"submit\" id=\"add\" class=\"{{aa.id}}\" value=\"加入购物车\">        </div>    </div>     </div><div class=\"main2\">    <div class=\"main2_left\">        <h2>基本介绍</h2>        <div class=\'main2_lefttu\'><img src=\"http://10.9.166.79:8080/images/{{aa.descImg.coursejianjie}}\" alt=\"\"></div>        <div class=\'main2_lefttu\'><img src=\"http://10.9.166.79:8080/images/{{aa.descImg.jiaoxuemubiao}}\" alt=\"\"></div>        <div class=\'main2_lefttu\'><img src=\"http://10.9.166.79:8080/images/{{aa.descImg.jiaoxuefangfa}}\" alt=\"\"></div>    </div>    <div class=\"main2_right\">        <h2>章节目录</h2>        {{each aa.courseCatalogs}}        <div class=\"title1\">            <h3>{{$value.catalog}}</h3>            <div class=\"title1_t\">                <ul>                            {{each $value.instructionContents}}                        <li>{{$value.name}}</li>                        {{/each}}                </ul>            </div>        </div>        {{/each}}    </div> </div>"
 
 /***/ })
 

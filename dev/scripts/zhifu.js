@@ -149,7 +149,7 @@ const zhifuCol = async () => {
     $('.btn').click(function(e) { 
         var id = $(e.target).attr("id");
         console.log(id)
-        // location.href = "zhifusucc.html?id=" + id;
+        location.href = "zhifusucc.html?id=" + id;
     })
 
 }
@@ -187,7 +187,7 @@ module.exports = {
 /* 23 */
 /***/ (function(module, exports) {
 
-module.exports = "                <!-- 主体 -->                <div class=\"main_whole\">                        <div class=\"main\">                            <div class=\"main1\">                                <div class=\"title\">                                    <p class=\"title1\">{{aa.ctitle}}</p>                                    <p class=\"title2\">主讲人：{{aa.author}}</p>                                </div>                                <div class=\"desc\">{{aa.description}}</div>                            </div>                        </div>                        <div class=\"main2\">                            <p class=\"desc1\">支付方式:</p>                            <input type=\"radio\" class=\"weixin\" name=\"zd\">微信支付<br>                            <input type=\"radio\" class=\"zfb\" name=\"zd\">支付宝支付                        </div>                        <div class=\"main3\">                                <input type=\"submit\" class=\"btn\" value=\"确认支付\" id=\"{{aa.id}}\">                        </div>                                       </div>    "
+module.exports = "                <!-- 主体 -->                <div class=\"main_whole\">                        <div class=\"main\">                            <div class=\"main1\">                                <div class=\"title\">                                    <p class=\"title1\">{{aa.ctitle}}</p>                                    <p class=\"title2\">主讲人：{{aa.author}}</p>                                </div>                                <div class=\"desc\">{{aa.description}}</div>                            </div>                        </div>                        <div class=\"main2\">                            <p class=\"desc1\">支付方式:</p>                            <input type=\"radio\" class=\"weixin\" name=\"zd\">微信支付<br>                            <input type=\"radio\" class=\"zfb\" name=\"zd\">支付宝支付<br>                            <input type=\"radio\" class=\"yfb\" name=\"zd\">翼付宝支付                        </div>                        <div class=\"main3\">                                <input type=\"submit\" class=\"btn\" value=\"确认支付\" id=\"{{aa.id}}\">                        </div>                                       </div>    "
 
 /***/ })
 /******/ ]);

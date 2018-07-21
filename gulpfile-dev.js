@@ -61,9 +61,7 @@ gulp.task('scss',()=>{
                 'personal':'./src/scripts/personal.js',
                 'car':'./src/scripts/car.js',
                 'buy':'./src/scripts/buy.js'
-            },
-
-                //入口 
+            }, 
             output:{ //出口
                 filename:'[name].js' //输出后的文件
             },
