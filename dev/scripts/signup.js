@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 33);
+/******/ 	return __webpack_require__(__webpack_require__.s = 44);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -68,14 +68,14 @@
 /***/ 0:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\"></div>"
+module.exports = "  <!-- 头部 -->  <div class=\"header_whole\">    <header>            <div class=\"logo\">                <a href=\"shouye.html\">                    <img src=\"./images/logo.png\" alt=\"logo\">                </a>            </div>            <div class=\"head-center\">                <div class=\"search\">                    <input type=\"text\">                    <i class=\"iconfont\" id=\"searchBtn\">&#xe641;</i>                </div>                <div class=\"nav\">                    <ul>                        <li><a href=\"shouye.html\">首页</a></li>                        <li><a href=\"zonghepaixu.html\">课程选择</a></li>                        <li><a href=\"youxuanhaoke.html\">优选好课</a></li>                    </ul>                </div>             </div>            <div class=\"login-register\">                <a href=\"signin.html\"><span>登录</span></a>|                <a href=\"signup.html\"><span>注册</span></a>                <a href=\"personal.html\"><span>个人中心</span></a>             </div>    </header></div>"
 
 /***/ }),
 
 /***/ 1:
 /***/ (function(module, exports) {
 
-module.exports = "  <!-- 头部 -->  <div class=\"header_whole\">    <header>            <div class=\"logo\">                <a href=\"shouye.html\">                    <img src=\"./images/logo.png\" alt=\"logo\">                </a>            </div>            <div class=\"head-center\">                <div class=\"search\">                    <input type=\"text\">                    <i class=\"iconfont\">&#xe641;</i>                </div>                <div class=\"nav\">                    <ul>                        <li><a href=\"shouye.html\">首页</a></li>                        <li><a href=\"zonghepaixu.html\">课程选择</a></li>                        <li><a href=\"youxuanhaoke.html\">优选好课</a></li>                    </ul>                </div>             </div>            <div class=\"login-register\">                <a href=\"login.html\"><span>登录</span></a>|                <a href=\"register\"><span>注册</span></a>                <a href=\"personal.html\"><span>个人中心</span></a>             </div>    </header></div>"
+module.exports = "<div class=\"container\"></div>"
 
 /***/ }),
 
@@ -86,14 +86,14 @@ module.exports = "<div class=\"footer\">    <div>            &copy;;2018 Search 
 
 /***/ }),
 
-/***/ 33:
+/***/ 44:
 /***/ (function(module, exports, __webpack_require__) {
 
-const indexTpl = __webpack_require__(0)
-const headerTpl = __webpack_require__(1)
+const indexTpl = __webpack_require__(1)
+const headerTpl = __webpack_require__(0)
 const footerTpl = __webpack_require__(2)
-const signupTpl = __webpack_require__(34)
-const signupController = __webpack_require__(35)
+const signupTpl = __webpack_require__(45)
+const signupController = __webpack_require__(46)
 
 $('#root').html(indexTpl)
 $('.container').html(headerTpl + signupTpl)
@@ -105,17 +105,17 @@ signupController.signupCol()
 
 /***/ }),
 
-/***/ 34:
+/***/ 45:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"content\">    <div class=\"login-center\">        <div class=\"welc\">            <div class=\"line\"></div>            <div class=\"login-title\">欢迎注册弘毅智学网！</div>            <div class=\"line\"></div>        </div>        <div class=\"login-user\">            <input type=\"text\" name=\"username\" id=\"username\" placeholder=\"请输入用户名\">        </div>        <div class=\"login-pwd\">                <input type=\"text\" name=\"pwd\" id=\"pwd\" placeholder=\"密码\">        </div>        <div class=\"login-phone\">            <input type=\"text\" name=\"phoneNumber\" id=\"phoneNumber\" placeholder=\"请输入手机号\">        </div>        <div class=\"login-email\">            <input type=\"text\" name=\"email\" id=\"email\" placeholder=\"请输入邮箱\">        </div>                      <div class=\"registerBtn\">            <button id=\"register-btn\">注册</button>        <div class=\"noNumber\">            <p>已有账号？<a href=\"signin.html\"><span>立即登录</span></a> </p>        </div>    </div></div>"
+module.exports = "<div class=\"content\">    <div class=\"login-center\">        <div class=\"welc\">            <div class=\"line\"></div>            <div class=\"login-title\">欢迎注册弘毅智学网！</div>            <div class=\"line\"></div>        </div>        <div class=\"login-user\">            <input type=\"text\" name=\"username\" id=\"username\" placeholder=\"请输入用户名\">        </div>        <div class=\"login-pwd\">                <input type=\"password\" name=\"pwd\" id=\"pwd\" placeholder=\"密码\">        </div>        <div class=\"login-phone\">            <input type=\"text\" name=\"phoneNumber\" id=\"phoneNumber\" placeholder=\"请输入手机号\">        </div>        <div class=\"login-email\">            <input type=\"text\" name=\"email\" id=\"email\" placeholder=\"请输入邮箱\">        </div>                      <div class=\"registerBtn\">            <button id=\"register-btn\">注册</button>        <div class=\"noNumber\">            <p>已有账号？<a href=\"signin.html\"><span>立即登录</span></a> </p>        </div>    </div></div>"
 
 /***/ }),
 
-/***/ 35:
+/***/ 46:
 /***/ (function(module, exports, __webpack_require__) {
 
-const signupModel = __webpack_require__(36)
+const signupModel = __webpack_require__(47)
 
 const signupCol = () => {
         
@@ -128,12 +128,12 @@ const signupCol = () => {
                     email: $("#email").val()
                 }
                 let result = await signupModel.signupModel(JSON.stringify({ username, password, phone, email }))
-                if (result.code == 0) {
-                                    location.href="/signin.html"
-                        }
-                        if (result.code == -1) {
-                            alert("用户名已存在")
-                        }
+                // if (result.code == 0) {
+                //                     location.href="/signin.html"
+                //         }
+                //         if (result.code == -1) {
+                //             alert("用户名已存在")
+                //         }
                         
                     $('#username').val(''),
                     $('#pwd').val(''),
@@ -152,7 +152,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 36:
+/***/ 47:
 /***/ (function(module, exports) {
 
 const signupModel = (data) => {

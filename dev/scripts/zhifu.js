@@ -60,20 +60,20 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ 	return __webpack_require__(__webpack_require__.s = 20);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\"></div>"
+module.exports = "  <!-- 头部 -->  <div class=\"header_whole\">    <header>            <div class=\"logo\">                <a href=\"shouye.html\">                    <img src=\"./images/logo.png\" alt=\"logo\">                </a>            </div>            <div class=\"head-center\">                <div class=\"search\">                    <input type=\"text\">                    <i class=\"iconfont\" id=\"searchBtn\">&#xe641;</i>                </div>                <div class=\"nav\">                    <ul>                        <li><a href=\"shouye.html\">首页</a></li>                        <li><a href=\"zonghepaixu.html\">课程选择</a></li>                        <li><a href=\"youxuanhaoke.html\">优选好课</a></li>                    </ul>                </div>             </div>            <div class=\"login-register\">                <a href=\"signin.html\"><span>登录</span></a>|                <a href=\"signup.html\"><span>注册</span></a>                <a href=\"personal.html\"><span>个人中心</span></a>             </div>    </header></div>"
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {
 
-module.exports = "  <!-- 头部 -->  <div class=\"header_whole\">    <header>            <div class=\"logo\">                <a href=\"shouye.html\">                    <img src=\"./images/logo.png\" alt=\"logo\">                </a>            </div>            <div class=\"head-center\">                <div class=\"search\">                    <input type=\"text\">                    <i class=\"iconfont\">&#xe641;</i>                </div>                <div class=\"nav\">                    <ul>                        <li><a href=\"shouye.html\">首页</a></li>                        <li><a href=\"zonghepaixu.html\">课程选择</a></li>                        <li><a href=\"youxuanhaoke.html\">优选好课</a></li>                    </ul>                </div>             </div>            <div class=\"login-register\">                <a href=\"login.html\"><span>登录</span></a>|                <a href=\"register\"><span>注册</span></a>                <a href=\"personal.html\"><span>个人中心</span></a>             </div>    </header></div>"
+module.exports = "<div class=\"container\"></div>"
 
 /***/ }),
 /* 2 */
@@ -83,12 +83,7 @@ module.exports = "<div class=\"footer\">    <div>            &copy;;2018 Search 
 
 /***/ }),
 /* 3 */,
-/* 4 */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"zhifu_main\"></div>"
-
-/***/ }),
+/* 4 */,
 /* 5 */,
 /* 6 */,
 /* 7 */,
@@ -96,14 +91,28 @@ module.exports = "<div class=\"zhifu_main\"></div>"
 /* 9 */,
 /* 10 */,
 /* 11 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"zhifu_main\"></div>"
+
+/***/ }),
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const indexTpl = __webpack_require__(0)
-const headerTpl = __webpack_require__(1)
+const indexTpl = __webpack_require__(1)
+const headerTpl = __webpack_require__(0)
 const footerTpl = __webpack_require__(2)
 
-const zhifu_mainTpl = __webpack_require__(4)
-const zhifuController = __webpack_require__(12)
+const zhifu_mainTpl = __webpack_require__(11)
+const zhifuController = __webpack_require__(21)
 
 
 $('#root').html(indexTpl)
@@ -113,12 +122,12 @@ zhifuController.zhifuCol()
 
 
 /***/ }),
-/* 12 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const zhifuJiekou = __webpack_require__(13)
-const zhifu_Main = __webpack_require__(4)
-const zhifuMb = __webpack_require__(14)
+const zhifuJiekou = __webpack_require__(22)
+const zhifu_Main = __webpack_require__(11)
+const zhifuMb = __webpack_require__(23)
 
 
 const zhifuCol = async () => {
@@ -140,7 +149,7 @@ const zhifuCol = async () => {
     $('.btn').click(function(e) { 
         var id = $(e.target).attr("id");
         console.log(id)
-        // location.href = "zhifusucc.html?id=" + id;
+        location.href = "zhifusucc.html?id=" + id;
     })
 
 }
@@ -149,7 +158,7 @@ module.exports={
 }
 
 /***/ }),
-/* 13 */
+/* 22 */
 /***/ (function(module, exports) {
 
 const  zhifuModel = (id)=>{
@@ -175,10 +184,10 @@ module.exports = {
 }
 
 /***/ }),
-/* 14 */
+/* 23 */
 /***/ (function(module, exports) {
 
-module.exports = "                <!-- 主体 -->                <div class=\"main_whole\">                        <div class=\"main\">                            <div class=\"main1\">                                <div class=\"title\">                                    <p class=\"title1\">{{aa.ctitle}}</p>                                    <p class=\"title2\">主讲人：{{aa.author}}</p>                                </div>                                <div class=\"desc\">{{aa.description}}</div>                            </div>                        </div>                        <div class=\"main2\">                            <p class=\"desc1\">支付方式:</p>                            <input type=\"radio\" class=\"weixin\" name=\"zd\">微信支付<br>                            <input type=\"radio\" class=\"zfb\" name=\"zd\">支付宝支付                        </div>                        <div class=\"main3\">                                <input type=\"submit\" class=\"btn\" value=\"确认支付\" id=\"{{aa.id}}\">                        </div>                                       </div>    "
+module.exports = "                <!-- 主体 -->                <div class=\"main_whole\">                        <div class=\"main\">                            <div class=\"main1\">                                <div class=\"title\">                                    <p class=\"title1\">{{aa.ctitle}}</p>                                    <p class=\"title2\">主讲人：{{aa.author}}</p>                                </div>                                <div class=\"desc\">{{aa.description}}</div>                            </div>                        </div>                        <div class=\"main2\">                            <p class=\"desc1\">支付方式:</p>                            <input type=\"radio\" class=\"weixin\" name=\"zd\">微信支付<br>                            <input type=\"radio\" class=\"zfb\" name=\"zd\">支付宝支付<br>                            <input type=\"radio\" class=\"yfb\" name=\"zd\">翼付宝支付                        </div>                        <div class=\"main3\">                                <input type=\"submit\" class=\"btn\" value=\"确认支付\" id=\"{{aa.id}}\">                        </div>                                       </div>    "
 
 /***/ })
 /******/ ]);

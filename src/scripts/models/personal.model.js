@@ -36,10 +36,17 @@ const  allModel = () =>{
     })
  }
 // 购物车(未购买)
+<<<<<<< HEAD
  const  mycenterNo = () =>{
     return new Promise((resolve,reject) => {
        $.ajax({
            url: '/api/mycenterno/1',
+=======
+ const  mycenterNo = (id) =>{
+    return new Promise((resolve,reject) => {
+       $.ajax({
+           url: 'api/mycenterno/'+id,
+>>>>>>> 0719jh
            type: 'GET',
         //    contentType: 'application/json; charset=utf-8',
            data: {

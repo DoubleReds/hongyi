@@ -25,9 +25,13 @@ const keChengCol = async () => {
         // location.href = "kechengxiangqing.html?id=" + id;
     })
 
-    $('.carr input').click(function(e) { 
+    $('#buy').click(function(e) { 
         var id = $(e.target).attr("class");
         location.href = "goumai.html?id=" + id;
+    })
+    $('#add').click(function(e) { 
+        var id = $(e.target).attr("class");
+        location.href = "car.html?id=" + id;
     })
 
 }

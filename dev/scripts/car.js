@@ -130,7 +130,11 @@ carController.mycenterNo()
 /***/ 6:
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 module.exports = "<div class=\"content\">    <div class=\"leftList\">        <ul>            <li><a href=\"personal.html\"><i></i> 已购买</a></li>            <li><a href=\"buy.html\"><i></i> 全部订单</a></li>            <li><a href=\"car.html\"><i></i> 购物车</a></li>        </ul>    </div>    <div class=\"rightList\">        <!-- <ul> -->            <!-- {{each all}}            <li>                <img class=\"img\" src=\"http://10.9.166.79:8080/images/{{$value.courseChoose.bigImg}}\" alt=\"111\">                <span class=\"price\"> 售价：{{$value.courseChoose.price}}元</span>                <div id=\"goumaiBtn\">点击购买</div>            </li>            {{/each}} -->            <!-- <li>                <img src=\"\" alt=\"111\">                <span>售价：199元</span>                <div>点击购买</div>            </li> -->        <!-- </ul> -->        <table id=\"cartTable\">                <thead>                        <tr>                          <th><label>                              <input class=\"check-all check\" type=\"checkbox\"/>&nbsp;&nbsp;全选</label></th>                          <th>商品</th>                          <th>单价</th>                          <th>数量</th>                          <th style=\"width: 50px;\">小计</th>                          <th>操作</th>                        </tr>                </thead>                <tbody>                        {{each all}}                        <tr>                                <td class=\"checkbox\"><input class=\"check-one check\" type=\"checkbox\"/></td>                                <td class=\"goods\">                                    <img src=\"http://10.9.166.79:8080/images/{{$value.courseChoose.bigImg}}\" alt=\"\"/>                                    <span>{{$value.courseChoose.ctitle}}</span>                                </td>                                <td class=\"price\">{{$value.courseChoose.price}}</td>                                <td class=\"count\">                                    <span class=\"reduce\">-</span>                                    <input class=\"count-input\" type=\"text\" value=\"1\"/>                                    <span class=\"add\">+</span></td>                                <td class=\"subtotal\" style=\"width: 100px\">{{$value.courseChoose.price}}</td>                                <td class=\"operation\"><span class=\"delete\">删除</span></td>                        </tr>                              {{/each}}                </tbody>         </table>                <div class=\"foot\" id=\"foot\">                <label class=\"fl select-all\"><input type=\"checkbox\" class=\"check-all check\"/>&nbsp;&nbsp;全选</label>                <a class=\"fl delete\" id=\"deleteAll\" href=\"javascript:;\">删除</a>                <div class=\"fr closing\" id=\"sum\" onclick=\"getTotal();\">结 算</div>                <input type=\"hidden\" id=\"cartTotalPrice\" />                <div class=\"fr total\">合计：￥<span id=\"priceTotal\">0.00</span></div>                <div class=\"fr selected\" id=\"selected\">已选商品                    <span id=\"selectedTotal\">0</span>件                    <span class=\"arrow up\">︽</span>                    <span class=\"arrow down\">︾</span>                </div>                <div class=\"selected-view\">                  <div id=\"selectedViewList\" class=\"clearfix\">                    <div><img src=\"\"><span>取消选择</span></div>                  </div>                  <span class=\"arrow\">◆<span>◆</span></span> </div>        </div>                </div></div>"
+=======
+module.exports = "<div class=\"content\">    <div class=\"leftList\">        <ul>            <li><a href=\"personal.html\"><i></i> 已购买</a></li>            <li><a href=\"buy.html\"><i></i> 全部订单</a></li>            <li><a href=\"car.html\"><i></i> 购物车</a></li>        </ul>    </div>    <div class=\"rightList\">        <!-- <ul> -->            <!-- {{each all}}            <li>                <img class=\"img\" src=\"http://10.9.166.79:8080/images/{{$value.courseChoose.bigImg}}\" alt=\"111\">                <span class=\"price\"> 售价：{{$value.courseChoose.price}}元</span>                <div id=\"goumaiBtn\">点击购买</div>            </li>            {{/each}} -->            <!-- <li>                <img src=\"\" alt=\"111\">                <span>售价：199元</span>                <div>点击购买</div>            </li> -->        <!-- </ul> -->        <table id=\"cartTable\">                <thead>                        <tr>                          <th><label>                              <input class=\"check-all check\" type=\"checkbox\"/>&nbsp;&nbsp;全选</label></th>                          <th>商品</th>                          <th>单价</th>                          <th>数量</th>                          <th style=\"width: 50px;\">小计</th>                          <th>操作</th>                        </tr>                </thead>                <tbody>                        {{each all}}                        <tr>                                <td class=\"checkbox\"><input class=\"check-one check\" type=\"checkbox\"/></td>                                <td class=\"goods\">                                    <img src=\"http://10.9.166.79:8080/images/{{$value.courseChoose.bigImg}}\" alt=\"\"/>                                    <span>{{$value.courseChoose.ctitle}}</span>                                </td>                                <td class=\"price\">{{$value.courseChoose.price}}</td>                                <td class=\"subtotal\" style=\"width: 100px\">{{$value.courseChoose.price}}</td>                                <td class=\"operation\"><span class=\"delete\">删除</span></td>                        </tr>                              {{/each}}                </tbody>         </table>                <div class=\"foot\" id=\"foot\">                <label class=\"fl select-all\"><input type=\"checkbox\" class=\"check-all check\"/>&nbsp;&nbsp;全选</label>                <a class=\"fl delete\" id=\"deleteAll\" href=\"javascript:;\">删除</a>                <div class=\"fr closing\" id=\"sum\" onclick=\"getTotal();\">结 算</div>                <input type=\"hidden\" id=\"cartTotalPrice\" />                <div class=\"fr total\">合计：￥<span id=\"priceTotal\">0.00</span></div>                <div class=\"fr selected\" id=\"selected\">已选商品                    <span id=\"selectedTotal\">0</span>件                    <span class=\"arrow up\">︽</span>                    <span class=\"arrow down\">︾</span>                </div>                <div class=\"selected-view\">                  <div id=\"selectedViewList\" class=\"clearfix\">                    <div><img src=\"\"><span>取消选择</span></div>                  </div>                  <span class=\"arrow\">◆<span>◆</span></span> </div>        </div>                </div></div>"
+>>>>>>> 0719jh
 
 /***/ }),
 
@@ -181,6 +185,7 @@ const allCol = async () => {
 }
 // 购物车 未购买
 const mycenterNo = async () => {
+<<<<<<< HEAD
     var all = await personalModel.mycenterNo();
     let allList = all.data
     // console.log(allList)
@@ -209,6 +214,45 @@ const mycenterNo = async () => {
             }
         }
      
+=======
+    var url = location.search; //获取url中"?"符后的字串
+    var theRequest = new Object();
+    if (url.indexOf("?") != -1) {
+       var str = url.substr(1);
+       strs = str.split("&");
+       for(var i = 0; i < strs.length; i ++) {
+          theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+       }
+    }
+    var id = theRequest.id
+    // console.log(id)
+    var a = await personalModel.mycenterNo(id);
+    // console.log(a)
+    let html = template.render(carMb, {
+        all: a.data,
+    })
+    $(".car_main").html(html)
+
+
+    // $('#sum').click(function(e) { 
+    //     var id = $(e.target).attr("class");
+    //     location.href = "car.html?id=" + id;
+    // })
+  
+        if (!document.getElementsByClassName) {
+        document.getElementsByClassName = function (cls) {
+        var ret = [];
+        var els = document.getElementsByTagName('*');
+        for (var i = 0, len = els.length; i < len; i++) {
+        if (els[i].className.indexOf(cls + ' ') >=0 || els[i].className.indexOf(' ' + cls + ' ') >=0 || els[i].className.indexOf(' ' + cls) >=0) {
+        ret.push(els[i]);
+        }
+        }
+        // console.log(ret)
+        return ret;
+        }
+        }
+>>>>>>> 0719jh
         var table = document.getElementById('cartTable'); // 购物车表格
         var selectInputs = document.getElementsByClassName('check'); // 所有勾选框
         var checkAllInputs = document.getElementsByClassName('check-all') // 全选框
@@ -221,6 +265,7 @@ const mycenterNo = async () => {
         var foot = document.getElementById('foot');
         // var sum = document.getElementById('#sum');
         // sum.on('click', function(e) {
+<<<<<<< HEAD
         //     var id=$(e.target).attr("id");
         //     location.href = "zhifu.html?id=" + id
         // })
@@ -366,6 +411,42 @@ const mycenterNo = async () => {
         checkAllInputs[0].checked = false;
         checkAllInputs[0].onclick();
     // }
+=======
+        // var id=$(e.target).attr("id");
+        // location.href = "zhifu.html?id=" + id
+        // })
+        // 更新总数和总价格，已选浮层
+        function getTotal() {
+        var seleted = 0;
+        var price = 0;
+        var HTMLstr = '';
+        for (var i = 0, len = tr.length; i < len; i++) {
+        if (tr[i].getElementsByTagName('input')[0].checked) {
+        tr[i].className = 'on';
+        seleted += parseInt(tr[i].getElementsByTagName('input')[1].value);
+        price += parseFloat(tr[i].cells[4].innerHTML);
+        HTMLstr += '<div>< img src="' + tr[i].getElementsByTagName('img')[0].src + '"><span class="del" index="' + i + '">取消选择</span></div>'
+        }
+        else {
+        tr[i].className = '';
+        }
+        } 
+        selectedTotal.innerHTML = seleted;
+        priceTotal.innerHTML = price.toFixed(2);
+        selectedViewList.innerHTML = HTMLstr;
+        if (seleted == 0) {
+        foot.className = 'foot';
+        }
+        }
+        // 计算单行价格
+        // function getSubtotal(tr) {
+        // var cells = tr.cells;
+        // var price = cells[2]; //单价
+        // var subtotal = cells[4]; //小计td
+        // var countInput = tr.getElementsByTagName('input')[1]; //数目in
+    
+
+>>>>>>> 0719jh
 
 }
 
@@ -418,10 +499,17 @@ const  allModel = () =>{
     })
  }
 // 购物车(未购买)
+<<<<<<< HEAD
  const  mycenterNo = () =>{
     return new Promise((resolve,reject) => {
        $.ajax({
            url: '/api/mycenterno/1',
+=======
+ const  mycenterNo = (id) =>{
+    return new Promise((resolve,reject) => {
+       $.ajax({
+           url: 'api/mycenterno/'+id,
+>>>>>>> 0719jh
            type: 'GET',
         //    contentType: 'application/json; charset=utf-8',
            data: {
