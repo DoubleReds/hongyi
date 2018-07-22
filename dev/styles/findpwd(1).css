@@ -1,0 +1,162 @@
+#root {
+  height: 100%; }
+  #root li {
+    list-style: none; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../iconfonts/iconfont.eot");
+  src: url("../iconfonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../iconfonts/iconfont.woff") format("woff"), url("../iconfonts/iconfont.ttf") format("truetype"); }
+
+.container {
+  width: 100%; }
+  .container .header_whole {
+    background-color: #fff;
+    width: 100%; }
+    .container .header_whole header {
+      background-color: #fff;
+      width: 1200px;
+      margin: 0 auto;
+      height: 170px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .container .header_whole header .logo {
+        flex: .1; }
+      .container .header_whole header .head-center {
+        flex: .4;
+        display: flex;
+        margin-top: 50px;
+        height: 120px;
+        flex-direction: column; }
+        .container .header_whole header .head-center .search {
+          font-family: 'iconfont' !important;
+          width: 100%;
+          height: 45px;
+          text-align: center;
+          border: 1px solid #333;
+          border-radius: 30px; }
+          .container .header_whole header .head-center .search input {
+            width: 75%;
+            height: 95%;
+            border: none;
+            border-right: 1px solid #333; }
+          .container .header_whole header .head-center .search .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 26px;
+            font-style: normal; }
+        .container .header_whole header .head-center ul {
+          text-align: center; }
+          .container .header_whole header .head-center ul li {
+            width: 100px;
+            padding: 10px;
+            float: left;
+            text-align: center; }
+            .container .header_whole header .head-center ul li a {
+              width: 100%;
+              height: 100%;
+              padding: 10px 10px;
+              text-decoration: none;
+              color: #333; }
+            .container .header_whole header .head-center ul li a:hover {
+              color: red;
+              border-bottom: 2px solid #d93732; }
+      .container .header_whole header .login-register {
+        flex: .3;
+        display: flex; }
+        .container .header_whole header .login-register a {
+          flex: 33.33%;
+          color: #333;
+          font-size: 16px;
+          text-decoration: none; }
+          .container .header_whole header .login-register a span:nth-child(1) {
+            width: 20%; }
+          .container .header_whole header .login-register a span:nth-child(2) {
+            width: 20%; }
+          .container .header_whole header .login-register a span:nth-child(3) {
+            width: 60%;
+            padding-left: 50px; }
+
+.container .footer {
+  background: #282828;
+  margin-top: 60px; }
+  .container .footer div {
+    width: 1200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 12px; }
+
+.container {
+  height: 100%;
+  box-sizing: border-box; }
+  .container .content {
+    width: 100%;
+    height: 780px;
+    background: url("../../images/sx1 (7).jpg");
+    background-size: cover;
+    position: relative; }
+    .container .content .login-center {
+      width: 807px;
+      height: 735px;
+      margin: 0 auto;
+      background: #fff;
+      text-align: center;
+      border-radius: 50px;
+      position: absolute;
+      left: 25%;
+      top: 20px; }
+      .container .content .login-center .welc {
+        width: 100%;
+        height: 60px;
+        margin-top: 107px;
+        background: #fff;
+        font-size: 28px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .container .content .login-center .welc .line {
+          width: 180px;
+          height: 2px;
+          background: #f00; }
+        .container .content .login-center .welc .login-title {
+          margin-left: 20px; }
+      .container .content .login-center .login-user {
+        width: 500px;
+        height: 55px;
+        margin-top: 40px;
+        margin-left: 153px;
+        text-align: left; }
+        .container .content .login-center .login-user input {
+          margin-top: 20px;
+          width: 100%;
+          height: 100%; }
+      .container .content .login-center .identifyCode {
+        width: 500px;
+        height: 55px;
+        margin: 80px auto; }
+        .container .content .login-center .identifyCode input {
+          width: 100%;
+          height: 100%; }
+      .container .content .login-center .loginBtn {
+        width: 500px;
+        margin: 30px auto;
+        background: #fff; }
+        .container .content .login-center .loginBtn button {
+          width: 100%;
+          height: 55px;
+          line-height: 55px;
+          border: none;
+          background: #5ebff0;
+          color: #fff; }
+        .container .content .login-center .loginBtn .noNumber {
+          width: 500px;
+          margin: 20px auto; }
+          .container .content .login-center .loginBtn .noNumber a {
+            text-decoration: none; }
+            .container .content .login-center .loginBtn .noNumber a span {
+              color: red; }

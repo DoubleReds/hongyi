@@ -21,6 +21,7 @@ const keChengCol = async () => {
     $(".kechengxiangqing_main").html(html)
     $('.carr .btn-buy').click(function(id) { 
         // var id=$(e.target).attr("id");
+        console.log(22222)
         console.log(id)
         // location.href = "kechengxiangqing.html?id=" + id;
     })

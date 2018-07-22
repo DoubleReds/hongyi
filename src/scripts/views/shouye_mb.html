@@ -1,0 +1,162 @@
+<!-- <div class="swiper-container">
+    <div class="swiper-wrapper">
+        {{each swiper}}
+        <div class="swiper-slide"><img id="{{$value.id}}" src="http://10.9.166.79:8080/images/{{$value.bigImg}}" alt=""></div>
+        {{/each}}
+    </div>
+</div>    -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+            {{each swiper}}
+            <div class="swiper-slide"><img id="{{$value.id}}" src="http://10.9.166.79:8080/images/{{$value.bigImg}}" alt=""></div>
+            {{/each}}
+    </div>     
+</div>
+<div class="course">
+<!-- course -->
+<div class="courseBody">
+    <div class="courseTitle">
+        <div class="tit-top">
+            <div class="line"></div>
+            <div>course</div>
+            <div class="line"></div>
+        </div>
+        <p>提供多种视觉设计课程，等你来选</p>               
+    </div>
+    <ul>
+        {{each course}}
+        <li><a href="kechengxiangqing.html?id={{$value.id}}">
+            <!-- http://10.9.166.79:8080/images/{{$value.bigImg}} -->
+            <img src="http://10.9.166.79:8080/images/{{$value.bigImg}}" alt="123">
+        </a></li>
+        {{ /each}}
+    </ul>
+</div>
+</div>
+<!-- characteristic -->
+<div class="characteristic">
+<div class="character">
+    <div class="courseTitle">
+        <div class="tit-top">
+            <div class="line"></div>
+            <div>Characteristic</div>
+            <div class="line"></div>
+        </div>
+        <p>专业才是硬道理，20万学员的智慧之选</p>               
+    </div>
+    <ul>
+        <li><a href="#">
+            <img src="./images/sx12.png" alt="123">
+            <div class="characDesc">
+                <p>零基础</p>
+                <p>平台内所有课程通俗易懂</p>
+                <p>有视频、图文、学习方式多样</p>
+            </div>
+        </a></li>
+        <li><a href="#">
+                <img src="./images/sx11.png" alt="123">
+                <div class="characDesc">
+                        <p>无门槛</p>
+                        <p>不限学历、不限专业</p>
+                        <p>只要你点开就能轻松学习</p>
+                </div>
+        </a></li>
+        <li><a href="#">
+                <img src="./images/sx15.png" alt="123">
+                <div class="characDesc">
+                        <p>阶梯式教学</p>
+                        <p>由浅入深、由简到难</p>
+                        <p>根据自身知识面、对症下药</p>
+                </div>
+        </a></li>
+        <li><a href="#">
+                <img src="./images/sx16.png" alt="123">
+                <div class="characDesc">
+                        <p>一对一效果跟踪</p>
+                        <p>不懂、不会、不清楚</p>
+                        <p>不要怕、平台专人解答</p>
+                </div>
+        </a></li>
+    </ul>
+</div> 
+</div>
+<!-- exhibition -->
+<div class="exhibition">
+<div class="exhibite">
+    <div class="courseTitle">
+        <div class="tit-top">
+            <div class="line"></div>
+            <div>exhibition</div>
+            <div class="line"></div>
+        </div>
+        <p>设计源于生活，高于生活</p>               
+    </div>
+    <ul>
+        {{each exhibition.slice(0, 8)}}
+        <li><a href="kechengxiangqing.html?id={{$value.id}}" >
+            <img src="http://10.9.166.79:8080/images/{{$value.url}}" alt="123">
+            <div><p>{{$value.title}}</p></div>
+            </a>
+        </li>
+    {{ /each }}
+        <!-- <li><a href="#">
+            <img src="" alt="123">
+            <div><p>海报设计</p></div>                    
+        </a></li>
+        <li><a href="#">
+            <img src="" alt="123">
+            <div><p>字体设计</p></div>                    
+        </a></li>
+        <li><a href="#">
+            <img src="" alt="123">
+            <div><p>插画设计</p></div>                    
+        </a></li>
+        <li><a href="#">
+            <img src="" alt="123">
+            <div><p>3D设计</p></div>
+        </a></li>
+        <li><a href="#">
+            <img src="" alt="123">
+            <div><p>2.5插画</p></div>
+        </a></li>
+        <li><a href="#">
+            <img src="" alt="123">
+            <div><p>图像合成</p></div>
+        </a></li>
+        <li><a href="#">
+            <img src="" alt="123">
+            <div><p>图像精修</p></div>
+        </a></li> -->
+    </ul>  
+</div> 
+</div>
+<!-- quotation -->
+<div class="quotation">
+<div class="quota">
+    <div class="courseTitle">
+        <div class="tit-top">
+            <div class="line"></div>
+            <div>quotation</div>
+            <div class="line"></div>
+        </div>
+        <p>大师语录，点亮你的心灵</p>               
+    </div>
+    <ul>
+        {{each quotation}}
+        <li><a href="kechengxiangqing.html?id={{$value.id}}">
+            <img src="http://10.9.166.79:8080/images/{{$value.bigImg}}" alt="123">
+        </a></li>
+        {{ /each }}
+        <!-- <li><a href="#">
+            <img src="" alt="123">
+        </a></li>
+        <li><a href="#">
+            <img src="" alt="123">
+        </a></li>
+        <li><a href="#">
+            <img src="" alt="123"> -->
+            <!-- <div><p>插画设计</p></div>                    
+        </a></li> -->
+    </ul>  
+</div>
+</div>

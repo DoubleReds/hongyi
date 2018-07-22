@@ -1,0 +1,151 @@
+#root {
+  height: 100%; }
+  #root li {
+    list-style: none; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../iconfonts/iconfont.eot");
+  src: url("../iconfonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../iconfonts/iconfont.woff") format("woff"), url("../iconfonts/iconfont.ttf") format("truetype"); }
+
+.container {
+  width: 100%; }
+  .container .header_whole {
+    background-color: #fff;
+    width: 100%; }
+    .container .header_whole header {
+      background-color: #fff;
+      width: 1200px;
+      margin: 0 auto;
+      height: 170px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .container .header_whole header .logo {
+        flex: .1; }
+      .container .header_whole header .head-center {
+        flex: .4;
+        display: flex;
+        margin-top: 50px;
+        height: 120px;
+        flex-direction: column; }
+        .container .header_whole header .head-center .search {
+          font-family: 'iconfont' !important;
+          width: 100%;
+          height: 45px;
+          text-align: center;
+          border: 1px solid #333;
+          border-radius: 30px; }
+          .container .header_whole header .head-center .search input {
+            width: 75%;
+            height: 95%;
+            border: none;
+            border-right: 1px solid #333; }
+          .container .header_whole header .head-center .search .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 26px;
+            font-style: normal; }
+        .container .header_whole header .head-center ul {
+          text-align: center; }
+          .container .header_whole header .head-center ul li {
+            width: 100px;
+            padding: 10px;
+            float: left;
+            text-align: center; }
+            .container .header_whole header .head-center ul li a {
+              width: 100%;
+              height: 100%;
+              padding: 10px 10px;
+              text-decoration: none;
+              color: #333; }
+            .container .header_whole header .head-center ul li a:hover {
+              color: red;
+              border-bottom: 2px solid #d93732; }
+      .container .header_whole header .login-register {
+        flex: .3;
+        display: flex; }
+        .container .header_whole header .login-register a {
+          flex: 33.33%;
+          color: #333;
+          font-size: 16px;
+          text-decoration: none; }
+          .container .header_whole header .login-register a span:nth-child(1) {
+            width: 20%; }
+          .container .header_whole header .login-register a span:nth-child(2) {
+            width: 20%; }
+          .container .header_whole header .login-register a span:nth-child(3) {
+            width: 60%;
+            padding-left: 50px; }
+
+.container .footer {
+  background: #282828;
+  margin-top: 60px; }
+  .container .footer div {
+    width: 1200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 12px; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+li {
+  list-style: none; }
+
+i {
+  font-style: normal; }
+
+b {
+  font-weight: 400; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+.container {
+  width: 100%; }
+  .container .main_whole {
+    background-color: #ececec;
+    width: 100%;
+    overflow: hidden;
+    height: 510px; }
+    .container .main_whole .main {
+      width: 1200px;
+      overflow: hidden;
+      margin: 0 auto; }
+      .container .main_whole .main .title {
+        float: left; }
+        .container .main_whole .main .title .title1 {
+          font-size: 30px;
+          margin: 55px 85px 20px 55px; }
+        .container .main_whole .main .title .title2 {
+          font-size: 14px;
+          margin-left: 55px; }
+      .container .main_whole .main .desc {
+        float: left;
+        width: 900px;
+        margin-top: 65px;
+        font-weight: normal;
+        font-size: 14px; }
+      .container .main_whole .main .anniu {
+        float: right;
+        margin-top: 50px;
+        text-align: center;
+        height: 100px; }
+        .container .main_whole .main .anniu .price {
+          font-size: 14px; }
+        .container .main_whole .main .anniu .btn {
+          display: block;
+          width: 90px;
+          height: 30px;
+          border-radius: 10px;
+          font-size: 14px;
+          background-color: #fff;
+          border: 1px solid #fc760a;
+          color: #fdaf70; }

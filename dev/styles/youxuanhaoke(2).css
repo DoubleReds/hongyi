@@ -1,0 +1,152 @@
+#root {
+  height: 100%; }
+  #root li {
+    list-style: none; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../iconfonts/iconfont.eot");
+  src: url("../iconfonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../iconfonts/iconfont.woff") format("woff"), url("../iconfonts/iconfont.ttf") format("truetype"); }
+
+.container {
+  width: 100%; }
+  .container .header_whole {
+    background-color: #fff;
+    width: 100%; }
+    .container .header_whole header {
+      background-color: #fff;
+      width: 1200px;
+      margin: 0 auto;
+      height: 170px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .container .header_whole header .logo {
+        flex: .1; }
+      .container .header_whole header .head-center {
+        flex: .4;
+        display: flex;
+        margin-top: 50px;
+        height: 120px;
+        flex-direction: column; }
+        .container .header_whole header .head-center .search {
+          font-family: 'iconfont' !important;
+          width: 100%;
+          height: 45px;
+          text-align: center;
+          border: 1px solid #333;
+          border-radius: 30px; }
+          .container .header_whole header .head-center .search input {
+            width: 75%;
+            height: 95%;
+            border: none;
+            border-right: 1px solid #333; }
+          .container .header_whole header .head-center .search .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 26px;
+            font-style: normal; }
+        .container .header_whole header .head-center ul {
+          text-align: center; }
+          .container .header_whole header .head-center ul li {
+            width: 100px;
+            padding: 10px;
+            float: left;
+            text-align: center; }
+            .container .header_whole header .head-center ul li a {
+              width: 100%;
+              height: 100%;
+              padding: 10px 10px;
+              text-decoration: none;
+              color: #333; }
+            .container .header_whole header .head-center ul li a:hover {
+              color: red;
+              border-bottom: 2px solid #d93732; }
+      .container .header_whole header .login-register {
+        flex: .3;
+        display: flex; }
+        .container .header_whole header .login-register a {
+          flex: 33.33%;
+          color: #333;
+          font-size: 16px;
+          text-decoration: none; }
+          .container .header_whole header .login-register a span:nth-child(1) {
+            width: 20%; }
+          .container .header_whole header .login-register a span:nth-child(2) {
+            width: 20%; }
+          .container .header_whole header .login-register a span:nth-child(3) {
+            width: 60%;
+            padding-left: 50px; }
+
+.container .footer {
+  background: #282828;
+  margin-top: 60px; }
+  .container .footer div {
+    width: 1200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 12px; }
+
+.container .swiper-container {
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto; }
+  .container .swiper-container img {
+    width: 100%;
+    height: 100%; }
+
+.container .yiyang {
+  width: 1200px;
+  margin: 0 auto; }
+  .container .yiyang .title {
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+    padding: 20px 0 0 0; }
+  .container .yiyang .tu ul {
+    overflow: hidden; }
+    .container .yiyang .tu ul li {
+      float: left;
+      width: 270px;
+      height: 160px;
+      margin-right: 25px; }
+      .container .yiyang .tu ul li:nth-of-type(4) {
+        margin-right: 0; }
+      .container .yiyang .tu ul li img {
+        width: 100%;
+        height: 100%; }
+
+.container .yiyang_main {
+  width: 1200px;
+  margin: 0 auto; }
+  .container .yiyang_main .title {
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+    padding: 20px 0 0 0; }
+  .container .yiyang_main .tu ul {
+    overflow: hidden; }
+    .container .yiyang_main .tu ul li {
+      float: left;
+      width: 270px;
+      height: 160px;
+      margin-right: 25px; }
+      .container .yiyang_main .tu ul li:nth-of-type(1) {
+        width: 270px;
+        height: 340px; }
+      .container .yiyang_main .tu ul li:nth-of-type(4) {
+        margin-right: 0; }
+      .container .yiyang_main .tu ul li:nth-of-type(7) {
+        margin-right: 0; }
+      .container .yiyang_main .tu ul li:nth-of-type(2) {
+        margin-bottom: 20px; }
+      .container .yiyang_main .tu ul li:nth-of-type(3) {
+        margin-bottom: 20px; }
+      .container .yiyang_main .tu ul li:nth-of-type(4) {
+        margin-bottom: 20px; }
+      .container .yiyang_main .tu ul li img {
+        width: 100%;
+        height: 100%; }

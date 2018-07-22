@@ -1,0 +1,26 @@
+<div class="zong">
+        <!-- <h2>
+                <span>综合排序</span>
+                <span>热门</span>
+        </h2> -->
+        <div class="zong_main">
+            <ul>
+                {{each ss}}
+                <li>
+                    <div class="zong_main_left">
+                        <img src="http://10.9.166.79:8080/images/{{$value.bigImg}}" alt="">
+                    </div>
+                    <div class="zong_main_right">
+                        <div class="top">
+                            <span>{{$value.ctitle}}</span>
+                            <span>课程评分:<i>{{$value.cores}}</i>分</span>
+                        </div>
+                        <div class="desc">
+                            {{$value.description}}
+                        </div>
+                    </div>
+                </li>
+                {{ /each }}
+            </ul>
+        </div>
+    </div>

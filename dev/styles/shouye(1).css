@@ -1,0 +1,283 @@
+#root {
+  height: 100%; }
+  #root li {
+    list-style: none; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../iconfonts/iconfont.eot");
+  src: url("../iconfonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../iconfonts/iconfont.woff") format("woff"), url("../iconfonts/iconfont.ttf") format("truetype"); }
+
+.container {
+  width: 100%; }
+  .container .header_whole {
+    background-color: #fff;
+    width: 100%; }
+    .container .header_whole header {
+      background-color: #fff;
+      width: 1200px;
+      margin: 0 auto;
+      height: 170px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .container .header_whole header .logo {
+        flex: .1; }
+      .container .header_whole header .head-center {
+        flex: .4;
+        display: flex;
+        margin-top: 50px;
+        height: 120px;
+        flex-direction: column; }
+        .container .header_whole header .head-center .search {
+          font-family: 'iconfont' !important;
+          width: 100%;
+          height: 45px;
+          text-align: center;
+          border: 1px solid #333;
+          border-radius: 30px; }
+          .container .header_whole header .head-center .search input {
+            width: 75%;
+            height: 95%;
+            border: none;
+            border-right: 1px solid #333; }
+          .container .header_whole header .head-center .search .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 26px;
+            font-style: normal; }
+        .container .header_whole header .head-center ul {
+          text-align: center; }
+          .container .header_whole header .head-center ul li {
+            width: 100px;
+            padding: 10px;
+            float: left;
+            text-align: center; }
+            .container .header_whole header .head-center ul li a {
+              width: 100%;
+              height: 100%;
+              padding: 10px 10px;
+              text-decoration: none;
+              color: #333; }
+            .container .header_whole header .head-center ul li a:hover {
+              color: red;
+              border-bottom: 2px solid #d93732; }
+      .container .header_whole header .login-register {
+        flex: .3;
+        display: flex; }
+        .container .header_whole header .login-register a {
+          flex: 33.33%;
+          color: #333;
+          font-size: 16px;
+          text-decoration: none; }
+          .container .header_whole header .login-register a span:nth-child(1) {
+            width: 20%; }
+          .container .header_whole header .login-register a span:nth-child(2) {
+            width: 20%; }
+          .container .header_whole header .login-register a span:nth-child(3) {
+            width: 60%;
+            padding-left: 50px; }
+
+.container .footer {
+  background: #282828;
+  margin-top: 60px; }
+  .container .footer div {
+    width: 1200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 12px; }
+
+.container {
+  flex: 1; }
+  .container .banner {
+    width: 100%;
+    height: 390px; }
+    .container .banner .swiper {
+      width: 100%;
+      height: 100%; }
+      .container .banner .swiper img {
+        width: 100%;
+        height: 100%; }
+  .container .course {
+    width: 100%; }
+    .container .course .courseBody {
+      width: 1200px;
+      margin: 0 auto; }
+      .container .course .courseBody .courseTitle {
+        height: 160px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+        .container .course .courseBody .courseTitle .tit-top {
+          flex: .5;
+          display: flex;
+          align-items: center;
+          font-size: 12px; }
+          .container .course .courseBody .courseTitle .tit-top .line {
+            height: 1px;
+            width: 150px;
+            background: #666;
+            margin: 0 20px; }
+        .container .course .courseBody .courseTitle p {
+          font-size: 18px; }
+      .container .course .courseBody ul {
+        width: 1200px;
+        height: 340px;
+        margin: 0 auto;
+        display: flex; }
+        .container .course .courseBody ul li {
+          width: 25%;
+          height: 80%;
+          margin-left: 44px;
+          background: #f99; }
+  .container .characteristic {
+    width: 100%;
+    background: #ebebeb; }
+    .container .characteristic .character {
+      width: 1200px;
+      margin: 0 auto; }
+      .container .characteristic .character .courseTitle {
+        height: 160px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #ebebeb; }
+        .container .characteristic .character .courseTitle .tit-top {
+          flex: .5;
+          display: flex;
+          align-items: center;
+          font-size: 12px; }
+          .container .characteristic .character .courseTitle .tit-top .line {
+            height: 1px;
+            width: 150px;
+            background: #666;
+            margin: 0 20px; }
+        .container .characteristic .character .courseTitle p {
+          font-size: 18px; }
+      .container .characteristic .character ul {
+        width: 1160px;
+        height: 380px;
+        margin-left: 30px;
+        display: flex;
+        justify-content: space-between; }
+        .container .characteristic .character ul li {
+          text-align: center; }
+          .container .characteristic .character ul li a {
+            width: 100%;
+            height: 100%;
+            color: #333; }
+            .container .characteristic .character ul li a img {
+              display: block;
+              padding: 0 10px; }
+            .container .characteristic .character ul li a div p:nth-child(1) {
+              font-size: 24px;
+              color: #333; }
+            .container .characteristic .character ul li a div p:nth-child(2) {
+              font-size: 18px;
+              color: #666; }
+            .container .characteristic .character ul li a div p:nth-child(3) {
+              font-size: 18px;
+              color: #666; }
+  .container .exhibition {
+    width: 100%; }
+    .container .exhibition .exhibite {
+      width: 1200px;
+      margin: 0 auto; }
+      .container .exhibition .exhibite .courseTitle {
+        height: 160px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 150px; }
+        .container .exhibition .exhibite .courseTitle .tit-top {
+          flex: .5;
+          display: flex;
+          align-items: center;
+          font-size: 12px; }
+          .container .exhibition .exhibite .courseTitle .tit-top .line {
+            height: 1px;
+            width: 150px;
+            background: #666;
+            margin: 0 20px; }
+        .container .exhibition .exhibite .courseTitle p {
+          font-size: 18px; }
+      .container .exhibition .exhibite ul {
+        height: 360px;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        .container .exhibition .exhibite ul li {
+          text-align: center;
+          position: relative; }
+          .container .exhibition .exhibite ul li a {
+            width: 100%;
+            height: 100%;
+            color: #333; }
+            .container .exhibition .exhibite ul li a img {
+              display: block;
+              padding: 0 10px; }
+            .container .exhibition .exhibite ul li a div {
+              width: 270px;
+              height: 25px;
+              bottom: 20px;
+              left: 10px;
+              font-size: 16px;
+              font-weight: 500;
+              background: #eee;
+              opacity: .5;
+              position: absolute; }
+  .container .quotation {
+    width: 100%;
+    background: #ebebeb; }
+    .container .quotation .quota {
+      width: 1200px;
+      margin: 0 auto; }
+      .container .quotation .quota .courseTitle {
+        height: 160px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #ebebeb;
+        height: 130px; }
+        .container .quotation .quota .courseTitle .tit-top {
+          flex: .5;
+          display: flex;
+          align-items: center;
+          font-size: 12px; }
+          .container .quotation .quota .courseTitle .tit-top .line {
+            height: 1px;
+            width: 150px;
+            background: #666;
+            margin: 0 20px; }
+        .container .quotation .quota .courseTitle p {
+          font-size: 18px; }
+      .container .quotation .quota ul {
+        height: 230px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        .container .quotation .quota ul li {
+          width: 270px;
+          height: 160px;
+          text-align: center;
+          position: relative;
+          background: #f99; }
+          .container .quotation .quota ul li a {
+            width: 100%;
+            height: 100%;
+            color: #333; }
+        .container .quotation .quota ul li:nth-child(1) {
+          margin-left: 30px; }
